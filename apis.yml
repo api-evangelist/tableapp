@@ -1,7 +1,25 @@
 aid: tableapp
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/tableapp.png
 name: TableApp
-description: TableApp is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: TABLEAPP (Tableapp Sdn Bhd, part of FunNow Ltd) is a real-time restaurant discovery and
+  reservation platform serving diners across Malaysia (Klang Valley) and Thailand. Consumers discover
+  restaurants and book tables with instant confirmation through the TABLEAPP website and iOS/Android
+  apps, and the TABLEAPP ELITE membership unlocks free signature dishes at partner restaurants, alongside
+  dining vouchers and gift cards. Restaurateurs list on both TABLEAPP and FunNow and manage reservations
+  and guest preferences with the TABLEAPP Manager tools. TableApp is a 500 Global portfolio company; it
+  operates a private mobile-app backend (api.tableapp.com) but publishes no public developer API, OpenAPI
+  specification, SDKs, or developer portal at this time.
 url: https://raw.githubusercontent.com/api-evangelist/tableapp/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +29,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Restaurants
+- Reservations
+- Restaurant Booking
+- Hospitality
+- Food and Dining
+- Consumer
+- Malaysia
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +46,24 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/tableapp-domain-security.yml
 - type: Website
   url: https://tableapp.com
+- type: Blog
+  url: https://blog.tableapp.com/
+- type: SignUp
+  url: https://www.tableapp.com/signup
+- type: Login
+  url: https://www.tableapp.com/login
+- type: Support
+  url: https://www.tableapp.com/support
+- type: TermsOfService
+  url: https://www.tableapp.com/info/agreement
+- type: PrivacyPolicy
+  url: https://www.tableapp.com/info/privacypolicy
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
